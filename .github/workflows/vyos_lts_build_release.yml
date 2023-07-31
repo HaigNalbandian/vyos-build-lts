@@ -1,9 +1,12 @@
 name: VyOS LTS Build
 
 on:
+  workflow_dispatch:
+      
   push:
     tags:
       - "*"
+
 
 jobs:
   build:
